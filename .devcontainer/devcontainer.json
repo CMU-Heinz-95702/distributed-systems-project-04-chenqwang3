@@ -1,0 +1,15 @@
+{
+	"name": "Tomcat Dev Container",
+	"build": {
+	  "dockerfile": "../Dockerfile",
+	  "context": ".."
+	},
+	"settings": {
+	  "terminal.integrated.defaultProfile.linux": "/bin/bash"
+	},
+	"appPort": [8080],
+	"runArgs": ["--init"],
+	"postCreateCommand": "echo 'Dev container setup complete!'",
+	"remoteUser": "root"
+}
+  
