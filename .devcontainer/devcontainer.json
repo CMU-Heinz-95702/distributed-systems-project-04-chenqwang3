@@ -4,12 +4,6 @@
 	  "dockerfile": "../Dockerfile",
 	  "context": ".."
 	},
-	"settings": {
-	  "terminal.integrated.defaultProfile.linux": "/bin/bash"
-	},
-	"appPort": [8080],
-	"runArgs": ["--init"],
-	"postCreateCommand": "echo 'Dev container setup complete!'",
-	"remoteUser": "root"
+	"forwardPorts": [8080],
+	"postCreateCommand": "catalina.sh run"
 }
-  
