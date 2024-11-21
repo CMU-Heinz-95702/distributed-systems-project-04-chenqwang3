@@ -1,0 +1,9 @@
+{
+	"name": "Tomcat Dev Container",
+	"build": {
+	  "dockerfile": "../Dockerfile",
+	  "context": ".."
+	},
+	"forwardPorts": [8080],
+	"postCreateCommand": "catalina.sh run"
+}
